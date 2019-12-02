@@ -40,7 +40,13 @@ from __future__ import print_function
 import collections
 import tensorflow as tf
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 
 class Block(collections.namedtuple('Block', ['scope', 'unit_fn', 'args'])):

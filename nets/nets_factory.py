@@ -32,7 +32,11 @@ from nets import resnet_v2
 from nets import vgg
 from nets.nasnet import nasnet
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 networks_map = {'alexnet_v2': alexnet.alexnet_v2,
                 'cifarnet': cifarnet.cifarnet,

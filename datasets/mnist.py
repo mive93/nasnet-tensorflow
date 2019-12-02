@@ -27,7 +27,11 @@ import tensorflow as tf
 
 from datasets import dataset_utils
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 _FILE_PATTERN = 'mnist_%s.tfrecord'
 

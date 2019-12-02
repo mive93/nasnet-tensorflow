@@ -28,7 +28,11 @@ import tensorflow as tf
 
 from nets import inception_utils
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 
 def block_inception_a(inputs, scope=None, reuse=None):

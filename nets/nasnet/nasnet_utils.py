@@ -35,7 +35,11 @@ import tensorflow as tf
 
 
 arg_scope = tf.contrib.framework.arg_scope
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 DATA_FORMAT_NCHW = 'NCHW'
 DATA_FORMAT_NHWC = 'NHWC'

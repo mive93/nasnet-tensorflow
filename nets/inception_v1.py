@@ -22,7 +22,11 @@ import tensorflow as tf
 
 from nets import inception_utils
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 trunc_normal = lambda stddev: tf.truncated_normal_initializer(0.0, stddev)
 
 

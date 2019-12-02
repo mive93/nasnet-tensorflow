@@ -62,7 +62,10 @@ from nets import resnet_utils
 
 
 resnet_arg_scope = resnet_utils.resnet_arg_scope
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
 
 
 @slim.add_arg_scope

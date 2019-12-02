@@ -38,7 +38,11 @@ import tensorflow as tf
 
 from datasets import dataset_utils
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 # TODO(nsilberman): Add tfrecord file type once the script is updated.
 _FILE_PATTERN = '%s-*'

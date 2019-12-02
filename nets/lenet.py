@@ -20,7 +20,11 @@ from __future__ import print_function
 
 import tensorflow as tf
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 
 def lenet(images, num_classes=10, is_training=False,

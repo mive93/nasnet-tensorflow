@@ -26,7 +26,11 @@ from __future__ import print_function
 
 import tensorflow as tf
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 
 def inception_arg_scope(weight_decay=0.00004,

@@ -25,7 +25,12 @@ from preprocessing import inception_preprocessing
 from preprocessing import lenet_preprocessing
 from preprocessing import vgg_preprocessing
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+
+# slim = tf.contrib.slim
+
 
 
 def get_preprocessing(name, is_training=False):

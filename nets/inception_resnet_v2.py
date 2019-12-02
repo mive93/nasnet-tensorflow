@@ -27,7 +27,11 @@ from __future__ import print_function
 
 import tensorflow as tf
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 
 def block35(net, scale=1.0, activation_fn=tf.nn.relu, scope=None, reuse=None):

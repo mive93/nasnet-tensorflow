@@ -21,7 +21,11 @@ import tensorflow as tf
 
 from nets import vgg
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 
 class VGGATest(tf.test.TestCase):

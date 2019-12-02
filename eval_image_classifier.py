@@ -25,7 +25,11 @@ from datasets import dataset_factory
 from nets import nets_factory
 from preprocessing import preprocessing_factory
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 tf.app.flags.DEFINE_integer(
     'batch_size', 50, 'The number of samples in each batch.')

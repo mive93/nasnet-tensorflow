@@ -24,7 +24,11 @@ import tensorflow as tf
 
 _PADDING = 4
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 
 def preprocess_for_train(image,

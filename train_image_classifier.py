@@ -25,7 +25,12 @@ from deployment import model_deploy
 from nets import nets_factory
 from preprocessing import preprocessing_factory
 
-slim = tf.contrib.slim
+
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+
+# slim = tf.contrib.slim
 
 tf.app.flags.DEFINE_string(
     'master', '', 'The address of the TensorFlow master to use.')
@@ -551,6 +556,8 @@ def main(_):
 
     # Merge all summaries together.
     summary_op = tf.summary.merge(list(summaries), name='summary_op')
+
+    print ('starting the training YAY')
 
 
     ###########################

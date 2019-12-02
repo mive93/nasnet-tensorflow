@@ -21,7 +21,11 @@ import tensorflow as tf
 
 from nets import alexnet
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 
 class AlexnetV2Test(tf.test.TestCase):

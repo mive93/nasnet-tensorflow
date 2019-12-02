@@ -19,8 +19,12 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
 
-slim = tf.contrib.slim
+# slim = tf.contrib.slim
+
 
 
 def preprocess_image(image, output_height, output_width, is_training):

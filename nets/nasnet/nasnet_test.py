@@ -21,7 +21,11 @@ import tensorflow as tf
 
 from nets.nasnet import nasnet
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 
 class NASNetTest(tf.test.TestCase):

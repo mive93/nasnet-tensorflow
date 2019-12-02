@@ -63,7 +63,11 @@ from datasets import dataset_factory
 from nets import nets_factory
 
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 tf.app.flags.DEFINE_string(
     'model_name', 'inception_v3', 'The name of the architecture to save.')

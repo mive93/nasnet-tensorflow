@@ -54,7 +54,11 @@ import tensorflow as tf
 
 from nets import resnet_utils
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 resnet_arg_scope = resnet_utils.resnet_arg_scope
 
 

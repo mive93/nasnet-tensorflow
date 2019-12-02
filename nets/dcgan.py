@@ -20,7 +20,11 @@ from __future__ import print_function
 from math import log
 
 import tensorflow as tf
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 
 def _validate_image_inputs(inputs):

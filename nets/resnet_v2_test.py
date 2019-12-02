@@ -24,7 +24,11 @@ import tensorflow as tf
 from nets import resnet_utils
 from nets import resnet_v2
 
-slim = tf.contrib.slim
+import sys
+sys.path.insert(0,'/home/repos/nasnet-mive')
+import slim
+# slim = tf.contrib.slim
+
 
 
 def create_test_input(batch_size, height, width, channels):
